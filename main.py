@@ -1,3 +1,5 @@
+import uvicorn
+
 from fastapi import FastAPI
 from api.routers import uploadfile, query
 
@@ -8,8 +10,8 @@ app = FastAPI(
 )
 
 # Include routers
-app.include_router(uploadfile.router, prefix="/api/v1")
-app.include_router(query.router, prefix="/api/v1")
+app.include_router(uploadfile.router)
+app.include_router(query.router)
 
 @app.get("/")
 async def root():
@@ -20,5 +22,7 @@ async def health():
     return {"status": "healthy"}
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    try:
+        uvicorn.run("main:app", host="localhost", port=8010, reload=True, workers=4)
+    except KeyboardInterrupt:
+        print("Server stopped by user.")

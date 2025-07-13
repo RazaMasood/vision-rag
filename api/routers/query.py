@@ -13,8 +13,7 @@ async def query_document(request: QueryRequest) -> QueryResponse:
     try:
         result = await query_documents(request.question)
         return QueryResponse(
-            answer=result["answer"],
-            sources=result["sources"]
+            answer=result["answer"]
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing query: {str(e)}")

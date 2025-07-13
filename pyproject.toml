@@ -5,14 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "einops>=0.8.1",
     "faiss-cpu>=1.11.0",
     "fastapi[standard]>=0.116.1",
+    "hf-xet>=1.1.5",
     "langchain>=0.3.26",
     "langchain-community>=0.3.27",
     "langchain-core>=0.3.68",
     "langchain-docling>=1.0.0",
     "langchain-huggingface>=0.3.0",
-    "langchain-milvus>=0.2.1",
     "langchain-ollama>=0.3.4",
     "pydentic>=0.0.1.dev3",
     "python-dotenv>=1.1.1",
