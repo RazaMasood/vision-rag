@@ -17,7 +17,9 @@ dependencies = [
     "langchain-ollama>=0.3.4",
     "pydentic>=0.0.1.dev3",
     "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
     "sentence-transformers>=5.0.0",
+    "streamlit>=1.46.1",
     "transformers>=4.53.1",
 ]
 
