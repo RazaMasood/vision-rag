@@ -24,4 +24,4 @@ OLLAMA_REPEAT_PENALTY = 1.1
 EXPORT_TYPE = ExportType.DOC_CHUNKS
 
 # Number of top results to retrieve - Increased for better context
-TOP_K = 5  # Increased from 3
+TOP_K = 5  
