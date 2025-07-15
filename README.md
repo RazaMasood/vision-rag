@@ -1,4 +1,4 @@
-# RAG Document Processing API
+# RAG Document Processing
 
 Upload documents and chat with them using local AI models.
 
