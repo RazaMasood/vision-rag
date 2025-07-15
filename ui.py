@@ -12,7 +12,7 @@ QUERY_ENDPOINT = f"{API_BASE_URL}/query/"
 HEALTH_ENDPOINT = f"{API_BASE_URL}/health"
 
 # Supported file types
-SUPPORTED_EXTENSIONS = ['pdf', 'docx', 'txt', 'md', 'html']
+SUPPORTED_EXTENSIONS = ['.pdf', '.docx', '.txt', '.md', '.html', '.csv', '.json', '.xlsx', '.pptx', '.jpg', '.png']
 
 def check_api_health() -> bool:
     """Check if the API is running"""
